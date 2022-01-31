@@ -1,0 +1,31 @@
+
+#include <stdio.h>
+int main()
+{
+    int id,tel,eng,maths,social,science, total,avg,sum;
+    char name,group;
+    printf("enter name:");
+scanf("%s",&name);
+printf("enter group:");
+scanf("%s",&group);
+printf("enter id");
+scanf("%d",&id);
+printf("enter marks i 5 subjects");
+scanf("%d%d%d%d%d",&tel,&eng,&maths,&social,&science);
+sum=tel+eng+maths+social+science;
+avg=sum/5;
+printf("sum=%d,avg=%d",sum,avg);
+if(avg>=90)
+printf("A grade");
+else if(avg>=80)
+printf("B grade");
+else if(avg>=70)
+printf("c grade");
+else if(avg>=60)
+printf("d grade");
+else if(avg>50)
+printf(" e grade");
+else
+printf("f");
+    return 0;
+}
